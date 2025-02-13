@@ -175,7 +175,7 @@ header {
     }
 
     .show-menu nav {
-        display: block;
+        display: none;
     }
 
     nav ul {
