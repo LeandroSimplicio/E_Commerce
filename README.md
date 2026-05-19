@@ -1,24 +1,28 @@
-# 🛒 BlueStore — E-commerce Landing Page
+# 🛒 BlueStore — E-commerce de Tecnologia & Games
 
-<p align="center">
-  <img src="https://e-commerce-tau-two-90.vercel.app/images/gaming-msi-header.png" alt="BlueStore Banner" width="100%" />
-</p>
+[![Live Demo](https://img.shields.io/badge/🔴_Demo-Live-blue?style=for-the-badge)](https://e-commerce-tau-two-90.vercel.app/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](./LICENSE)
 
-<p align="center">
-  <a href="https://e-commerce-tau-two-90.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/🔗 Demo-Live-blue?style=for-the-badge" alt="Live Demo" />
-  </a>
-  <img src="https://img.shields.io/badge/Status-Concluído-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
-</p>
+> Projeto refatorado de HTML/CSS/JS puro para **React 18 + Tailwind CSS + Vite** —
+> com arquitetura de componentes, Context API para carrinho e design totalmente responsivo.
+
+🔗 **Acesse ao vivo:** https://e-commerce-tau-two-90.vercel.app/
 
 ---
 
-## 📌 Sobre o Projeto
+## 🔄 Antes × Depois
 
-A **BlueStore** é uma landing page de e-commerce moderna e responsiva voltada para produtos de tecnologia e periféricos gamer. O projeto foi desenvolvido com foco em design limpo, boa experiência de usuário e apresentação atrativa dos produtos.
-
-🔗 **Acesse aqui:** [https://e-commerce-tau-two-90.vercel.app/](https://e-commerce-tau-two-90.vercel.app/)
+| | Versão 1 (HTML/CSS/JS) | Versão 2 (React + Tailwind) |
+|---|---|---|
+| **Stack** | HTML5 · CSS3 · JavaScript puro | React 18 · Tailwind CSS · Vite |
+| **Componentização** | Nenhuma | Arquitetura modular com componentes reutilizáveis |
+| **Estado** | Variáveis globais no DOM | Context API (CartContext) |
+| **Estilização** | CSS manual com classes repetidas | Utility-first com Tailwind |
+| **Build** | Nenhum (arquivo estático) | Vite com hot reload e otimização |
+| **Responsividade** | Media queries manuais | Mobile-first com breakpoints Tailwind |
 
 ---
 
@@ -26,32 +30,23 @@ A **BlueStore** é uma landing page de e-commerce moderna e responsiva voltada p
 
 - 🧭 **Navbar responsiva** com menu hambúrguer para mobile
 - 🎯 **Hero Section** com chamada para ação (CTA)
-- 🖥️ **Vitrine de produtos** dividida por categorias:
-  - Periféricos Gamer
-  - Smartphones
-  - Consoles e Acessórios
+- 🖥️ **Vitrine de produtos** dividida por categorias (Periféricos, Smartphones, Consoles)
+- 🛒 **Carrinho funcional** — adicionar, remover e atualizar quantidade via Context API
 - ⭐ **Avaliações por estrelas** em cada produto
-- 📢 **Seção de produto em destaque** (Mi Smart Band 4)
+- 📢 **Produto em destaque** com seção dedicada
 - 💬 **Depoimentos de clientes**
 - 📱 **Seção de download do app** (App Store & Play Store)
-- 🔗 **Footer** com links úteis e copyright
+- 🔗 **Footer** completo com links e copyright
 
 ---
 
-## 🖼️ Preview
+## 🛠️ Tecnologias
 
-| Desktop | Mobile |
-|--------|--------|
-| ![Desktop](https://e-commerce-tau-two-90.vercel.app/images/gaming-msi-header.png) | *(responsivo)* |
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-- **Vercel** para deploy
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
 
 ---
 
@@ -60,19 +55,22 @@ A **BlueStore** é uma landing page de e-commerce moderna e responsiva voltada p
 ```
 📦 bluestore/
 ├── 📄 index.html
-├── 🎨 style.css
-├── ⚙️ script.js
-└── 📂 images/
-    ├── gaming-msi-header.png
-    ├── exclusive.png
-    ├── cart.png
-    ├── menu.png
-    ├── app-store.png
-    ├── play-store.png
-    └── 📂 products/
-        ├── product-1-Photoroom.png
-        ├── product-2-Photoroom.png
-        └── ...
+├── ⚙️  vite.config.js
+├── 📄 package.json
+└── 📂 src/
+    ├── 📄 main.jsx
+    ├── 📄 App.jsx
+    ├── 📂 components/
+    │   ├── Navbar.jsx
+    │   ├── Hero.jsx
+    │   ├── ProductCard.jsx
+    │   ├── Cart.jsx
+    │   ├── Depoimentos.jsx
+    │   └── Footer.jsx
+    ├── 📂 context/
+    │   └── CartContext.jsx
+    └── 📂 assets/
+        └── images/
 ```
 
 ---
@@ -81,53 +79,55 @@ A **BlueStore** é uma landing page de e-commerce moderna e responsiva voltada p
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/bluestore.git
+git clone https://github.com/LeandroSimplicio/E_Commerce.git
 
-# Acesse a pasta do projeto
-cd bluestore
+# Acesse a pasta
+cd E_Commerce
 
-# Abra o arquivo index.html no navegador
-# Ou use a extensão Live Server no VS Code
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
 ```
 
-> Não requer instalação de dependências — é um projeto front-end puro.
+Acesse `http://localhost:5173` no navegador.
 
 ---
 
 ## 🌐 Deploy
 
-O projeto está hospedado na **Vercel**. Para fazer seu próprio deploy:
+Hospedado na **Vercel** com deploy automático a cada push na branch `main`.
 
-1. Crie uma conta em [vercel.com](https://vercel.com)
-2. Importe o repositório do GitHub
-3. Clique em **Deploy** — pronto! ✅
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/LeandroSimplicio/E_Commerce)
 
 ---
 
 ## 📦 Produtos em Destaque
 
 | Categoria | Produtos |
-|-----------|----------|
+|---|---|
 | 🎮 Gamer | Combo Gamer Meetion, Cadeira Gamer Frizzi, Volante Ferrari |
 | 🖥️ Hardware | MSI GeForce GTX 1650, PC Gamer |
-| 📱 Smartphones | iPhone 10, Galaxy S23 Ultra, Rogue Phone 5, Xiaomi 12S |
+| 📱 Smartphones | iPhone, Galaxy S23 Ultra, Rogue Phone 5, Xiaomi |
 | 🕹️ Consoles | PlayStation 5, Xbox Series X, DualSense PS5 |
 
 ---
 
 ## 🙋‍♂️ Autor
 
-Feito com 💙 por **Leandro Simplicio**
+Feito com 💙 por **Leandro Simplício**
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)]([https://github.com/Leandro](https://github.com/LeandroSimplicio))
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](www.linkedin.com/in/leandro-simplicio)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/LeandroSimplicio)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/leandro-simplicio)
+[![Portfólio](https://img.shields.io/badge/Portfólio-1A56DB?style=flat&logo=vercel&logoColor=white)](https://portifolio-leandro-delta.vercel.app)
 
 ---
 
 ## 📄 Licença
 
-Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
 
 ---
 
-<p align="center">Copyright © 2024 Leandro Simplicio — Todos os Direitos Reservados</p>
+*Copyright © 2026 Leandro Simplício*
